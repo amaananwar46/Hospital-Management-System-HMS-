@@ -1,0 +1,487 @@
+/* .bill-list {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.bill-list h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+.bills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.bill-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bill-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.bill-card-header h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.bill-date {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.bill-amount {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.bill-card-body {
+  padding: 15px;
+}
+
+.bill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bill-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 10px 0;
+}
+
+.medicines-section {
+  margin-top: 10px;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+}
+
+.medicine-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.bill-card-footer {
+  padding: 12px 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-print {
+  flex: 1;
+  padding: 10px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-print:hover {
+  background-color: #138496;
+}
+
+.btn-delete-bill {
+  flex: 1;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-delete-bill:hover {
+  background-color: #c82333;
+}
+
+.confirm-delete {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.confirm-delete p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.btn-confirm-delete {
+  flex: 1;
+  width: 100%;
+  padding: 8px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-cancel-delete {
+  flex: 1;
+  width: 100%;
+  padding: 8px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .bills-container {
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+
+
+
+/* ---------------------------------------------- */
+
+.bill-list {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.bill-list h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* No Data */
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+/* Grid Container */
+.bills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+/* Bill Card */
+.bill-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.bill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.bill-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Title */
+.bill-card-header h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+/* Date */
+.bill-date {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Amount */
+.bill-amount {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Body */
+.bill-card-body {
+  padding: 15px;
+}
+
+/* Bill Item */
+.bill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  gap: 10px;
+}
+
+/* Divider */
+.bill-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 10px 0;
+}
+
+/* Medicines */
+.medicines-section {
+  margin-top: 10px;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+}
+
+/* Medicine Row */
+.medicine-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 13px;
+  color: #666;
+  gap: 10px;
+}
+
+/* Footer */
+.bill-card-footer {
+  padding: 12px 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Print Button */
+.btn-print {
+  flex: 1;
+  padding: 10px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-print:hover {
+  background-color: #138496;
+}
+
+/* Delete Button */
+.btn-delete-bill {
+  flex: 1;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-delete-bill:hover {
+  background-color: #c82333;
+}
+
+/* Confirm Delete Box */
+.confirm-delete {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Confirm Text */
+.confirm-delete p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+}
+
+/* Confirm Button */
+.btn-confirm-delete {
+  width: 100%;
+  padding: 8px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Cancel Button */
+.btn-cancel-delete {
+  width: 100%;
+  padding: 8px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .bills-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .bill-amount {
+    font-size: 22px;
+  }
+
+  .bill-card-header h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .bills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bill-list {
+    padding: 15px;
+  }
+
+  .bill-list h2 {
+    font-size: 20px;
+  }
+
+  .bill-card-footer {
+    flex-direction: column;
+  }
+
+  .btn-print,
+  .btn-delete-bill {
+    width: 100%;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .bill-card-header,
+  .bill-card-body,
+  .bill-card-footer {
+    padding: 12px;
+  }
+
+  .bill-card-header h3 {
+    font-size: 15px;
+  }
+
+  .bill-amount {
+    font-size: 20px;
+  }
+
+  .bill-item,
+  .medicine-line {
+    font-size: 12px;
+  }
+
+  .btn-print,
+  .btn-delete-bill {
+    font-size: 12px;
+    padding: 9px;
+  }
+}

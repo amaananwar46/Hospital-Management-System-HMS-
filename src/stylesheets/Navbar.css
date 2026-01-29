@@ -1,0 +1,115 @@
+/* .navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+  width:86vw;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-user {
+  font-size: 14px;
+  background-color: #1565c0;
+  padding: 5px 10px;
+  border-radius: 4px;
+} */
+
+
+
+/* --------------------------------------- */
+.navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+  width: 86vw;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Title */
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* User Badge */
+.navbar-user {
+  font-size: 14px;
+  background-color: #1565c0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+
+/* =============== RESPONSIVE =============== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .navbar {
+    width: 100%;
+    padding: 14px 18px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+
+  .navbar-user {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 15px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .navbar-title {
+    font-size: 16px;
+  }
+
+  .navbar-user {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbar-title {
+    font-size: 14px;
+  }
+
+  .navbar-user {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+}

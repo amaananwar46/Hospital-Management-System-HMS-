@@ -1,0 +1,146 @@
+/* .patient-form {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.patient-form input,
+.patient-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.patient-form button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.patient-form button:hover {
+  background-color: #1565c0;
+} */
+
+/* --------------------------------------- */
+
+
+
+
+
+.patient-form {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Inputs */
+.patient-form input,
+.patient-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  flex: 1;
+  min-width: 140px;
+}
+
+/* Button */
+.patient-form button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover */
+.patient-form button:hover {
+  background-color: #1565c0;
+}
+
+/* Active */
+.patient-form button:active {
+  transform: scale(0.95);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .patient-form {
+    gap: 8px;
+    padding: 14px;
+  }
+
+  .patient-form input,
+  .patient-form select {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .patient-form button {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .patient-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .patient-form input,
+  .patient-form select {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .patient-form button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .patient-form {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .patient-form input,
+  .patient-form select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .patient-form button {
+    font-size: 13px;
+    padding: 9px;
+  }
+}
