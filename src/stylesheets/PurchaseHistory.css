@@ -145,7 +145,7 @@
 .btn-print-receipt:hover {
   background-color: #138496;
 }
-
+/* 
 @media (max-width: 768px) {
   .purchase-history {
     padding: 15px;
@@ -171,4 +171,123 @@
   }
 } 
 
+ */
 
+
+ /* ---------- Tablet ---------- */
+@media (max-width: 992px) {
+
+  .purchase-history-container {
+    padding: 12px;
+  }
+
+  .purchase-header h3 {
+    font-size: 16px;
+  }
+
+  .purchase-total {
+    font-size: 20px;
+  }
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+
+  .purchase-history-container {
+    padding: 8px;
+  }
+
+  .purchase-history {
+    padding: 12px;
+  }
+
+  /* Header Stack */
+  .purchase-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .purchase-total {
+    align-self: flex-end;
+    font-size: 18px;
+  }
+
+  /* Filter Card */
+  .filter-section {
+    padding: 10px;
+  }
+
+  .filter-section label {
+    font-size: 13px;
+  }
+
+  /* Table Scroll Fix */
+  .purchase-body {
+    overflow-x: auto;
+  }
+
+  .purchase-body table {
+    min-width: 500px;
+  }
+
+  /* Button Touch Friendly */
+  .btn-print-receipt {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .purchase-history-container {
+    padding: 4px;
+  }
+
+  .purchase-history {
+    padding: 8px;
+  }
+
+  .purchase-card {
+    border-radius: 6px;
+  }
+
+  .purchase-header {
+    padding: 10px;
+  }
+
+  .purchase-header h3 {
+    font-size: 14px;
+  }
+
+  .purchase-date {
+    font-size: 11px;
+  }
+
+  .purchase-total {
+    font-size: 15px;
+  }
+
+  .purchase-body {
+    padding: 10px;
+  }
+
+  /* Table more compact */
+  .purchase-body table {
+    min-width: 390px;
+    font-size: 11px;
+  }
+
+  .purchase-body th,
+  .purchase-body td {
+    padding: 6px;
+  }
+
+  /* Button compact */
+  .btn-print-receipt {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+}

@@ -65,3 +65,82 @@
   transform: scale(0.98);
 } 
 
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 768px) {
+
+  .doctor-form {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .doctor-form h2 {
+    font-size: 20px;
+  }
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width: 480px) {
+
+  .doctor-form {
+    margin: 12px;
+    padding: 16px;
+    border-radius: 6px;
+  }
+
+  .doctor-form h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Button mobile friendly */
+  .doctor-form button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 360px) {
+
+  .doctor-form {
+    margin: 8px;
+    padding: 12px;
+  }
+
+  .doctor-form h2 {
+    font-size: 16px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .doctor-form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

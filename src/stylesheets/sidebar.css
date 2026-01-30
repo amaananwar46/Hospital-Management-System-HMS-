@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: all 0.3s ease;
+
 }
 
 .sidebar button {
@@ -21,6 +23,52 @@
 .sidebar button:hover {
   background-color: #d1d1d1;
 } 
+
+.sidebar button.active {
+  background-color: #333;
+  color: white;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 160px;
+    padding: 15px;
+  }
+
+  .sidebar button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .sidebar button {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 90px;
+    padding: 8px;
+  }
+
+  .sidebar button {
+    font-size: 11px;
+    padding: 6px;
+  }
+}
+
 
 
 
