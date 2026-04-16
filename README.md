@@ -1,16 +1,66 @@
-# React + Vite
+# 🏥 Hospital Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend-based Hospital Management System designed to manage patient appointments, doctor schedules, prescriptions, and billing in a structured and user-friendly interface.
 
-Currently, two official plugins are available:
+It simulates real-world hospital workflows including patient booking, doctor availability, and billing management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Visit here:  
+👉 https://amaananwar46.github.io/Hospital-Management-System/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Project Overview
+
+This project is built to digitize basic hospital operations through a frontend interface.
+
+It allows:
+- Patients to book appointments with doctors
+- Doctors to manage their availability and schedules
+- Prescription and medicine management
+- Billing system with fees and timings
+
+---
+
+## ✨ Features
+
+### 👤 Patient Features
+- Book doctor appointments
+- View available doctors
+- Check appointment status
+- View prescriptions and billing details
+
+### 🩺 Doctor Features
+- Add and manage availability timings
+- View patient appointments
+- Manage prescriptions
+- Track patient records (frontend simulation)
+
+### 💰 Billing System
+- Appointment fee calculation
+- Basic billing interface
+- Time-based scheduling support
+
+---
+
+## 🧰 Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Bootstrap / Tailwind (if used)
+- Frontend-based logic (no backend)
+
+---
+
+## 📁 Project Structure
+
+```text id="hm002"
+Hospital-Management-System/
+ ├── index.html
+ ├── css/
+ ├── js/
+ ├── assets/
